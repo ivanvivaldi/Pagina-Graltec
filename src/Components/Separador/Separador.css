@@ -1,0 +1,18 @@
+.contenedor_separador{
+    text-align: center;
+}
+
+.contenedor_separador_h2{
+    filter: brightness(0) saturate(100%) invert(34%) sepia(93%)
+        saturate(1200%) hue-rotate(175deg) brightness(60%) contrast(101%);
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 5px;
+}
+
+.contenedor_separador_h1{
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: 600;
+    margin-top: 5px;
+}

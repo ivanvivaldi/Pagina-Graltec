@@ -1,0 +1,249 @@
+
+
+
+.inicio {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+
+    color: white;
+}
+
+
+/* ==========================
+   VIDEO
+========================== */
+
+.inicio__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    z-index: 0;
+    
+}
+
+
+/* ==========================
+   OVERLAY
+========================== */
+
+.inicio__overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(3, 15, 25, 0.9) 0%,
+            rgba(3, 15, 25, 0.72) 35%,
+            rgba(3, 15, 25, 0.28) 70%,
+            rgba(3, 15, 25, 0.15) 100%
+        );
+
+    z-index: 1;
+}
+
+
+/* ==========================
+   CONTENIDO
+========================== */
+
+.inicio__contenido {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+    padding: 0 6%;
+}
+
+
+/* ==========================
+   TITULO
+========================== */
+
+.inicio__titulo {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: clamp(3rem, 5vw, 5.3rem);
+    line-height: 1.05;
+    font-weight: 700;
+
+    letter-spacing: -2px;
+}
+
+.inicio__titulo span {
+    color: #0874c9;
+}
+
+
+/* ==========================
+   DESCRIPCIÓN
+========================== */
+
+.inicio__descripcion {
+    margin-top: 32px;
+    
+    font-size: clamp(1rem, 1.5vw, 1.45rem);
+    line-height: 1.45;
+    font-weight: 400;
+
+    color: rgba(255, 255, 255, 0.92);
+}
+
+
+/* ==========================
+   ESTADÍSTICAS
+========================== */
+
+.inicio__estadisticas {
+    display: flex;
+    align-items: center;
+
+    margin-top: 55px;
+}
+
+.inicio__estadistica {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-width: 250px;
+}
+
+.inicio__icono {
+    width: 52px;
+    height: 52px;
+
+    object-fit: contain;
+
+    margin-bottom: 18px;
+    filter: brightness(0) saturate(100%) invert(34%) sepia(93%)
+        saturate(1200%) hue-rotate(175deg) brightness(90%) contrast(101%);
+}
+
+.inicio__numero {
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    line-height: 1;
+    font-weight: 700;
+}
+
+.inicio__label {
+    margin-top: 10px;
+
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+/* ==========================
+   SEPARADOR
+========================== */
+
+.inicio__separador {
+    width: 1px;
+    height: 170px;
+
+    margin: 0 50px;
+
+    background: rgba(255, 255, 255, 0.35);
+}
+
+
+/* ==========================
+   FLECHA
+========================== */
+
+.inicio__flecha {
+    position: absolute;
+
+    left: 50%;
+    bottom: 35px;
+
+    z-index: 3;
+
+    transform: translateX(-50%);
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio__flecha span {
+    width: 20px;
+    height: 20px;
+
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+
+    transform: rotate(45deg);
+}
+
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (max-width: 768px) {
+
+    .inicio {
+        min-height: 100svh;
+    }
+
+    .inicio__contenido {
+        padding: 100px 24px 80px;
+    }
+
+    .inicio__titulo {
+        font-size: clamp(2.5rem, 11vw, 4rem);
+        letter-spacing: -1px;
+    }
+
+    .inicio__descripcion br {
+        display: none;
+    }
+
+    .inicio__estadisticas {
+        margin-top: 45px;
+    }
+
+    .inicio__estadistica {
+        min-width: 0;
+        flex: 1;
+    }
+
+    .inicio__separador {
+        height: 120px;
+        margin: 0 20px;
+    }
+
+    .inicio__numero {
+        font-size: 2.2rem;
+    }
+
+    .inicio__label {
+        font-size: 0.75rem;
+    }
+
+    .inicio__icono {
+        width: 42px;
+        height: 42px;
+    }
+}
+

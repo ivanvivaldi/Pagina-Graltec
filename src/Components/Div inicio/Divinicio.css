@@ -1,0 +1,29 @@
+
+
+.contenedor{
+    text-align: center;
+    background-color: #E4E6E9;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.contenedor_h2{
+    filter: brightness(0) saturate(100%) invert(34%) sepia(93%)
+        saturate(1200%) hue-rotate(175deg) brightness(60%) contrast(101%);
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 5px;
+    border-top-left-radius: 20px;
+    margin-top: 33.2px;
+    padding-top: 30px;
+}
+
+.contenedor_h1{
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    background-color: #E4E6E9;
+}
+

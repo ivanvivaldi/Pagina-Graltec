@@ -1,0 +1,320 @@
+.consulta-card {
+    width: 100%;
+    max-width: 650px;
+
+    padding: 32px;
+
+    background-color: #ffffff;
+
+    border-radius: 12px;
+
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+
+    box-sizing: border-box;
+}
+
+
+/* ENCABEZADO */
+
+.consulta-card__encabezado {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 16px;
+
+    margin-bottom: 24px;
+}
+
+.consulta-card__icono {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background-color: #0a4f82;
+    color: white;
+
+    font-size: 22px;
+}
+
+.consulta-card__encabezado h3 {
+    margin: 0 0 5px;
+
+    font-size: 20px;
+    color: #17202a;
+}
+
+.consulta-card__encabezado p {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 1.4;
+
+    color: #5d6670;
+}
+
+
+/* CAMPOS */
+
+.consulta-card__campos {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.consulta-card__input,
+.consulta-card__textarea {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #d6dce2;
+    border-radius: 4px;
+
+    font-family: inherit;
+    font-size: 14px;
+
+    outline: none;
+
+    box-sizing: border-box;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.consulta-card__textarea {
+    min-height: 184px;
+
+    resize: vertical;
+}
+
+
+/* FOCUS */
+
+.consulta-card__input:focus,
+.consulta-card__textarea:focus {
+    border-color: #0a4f82;
+
+    box-shadow: 0 0 0 3px rgba(10, 79, 130, 0.08);
+}
+
+
+/* BOTÓN */
+
+.consulta-card__boton {
+    width: 100%;
+
+    margin-top: 18px;
+    padding: 13px 20px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #0a4f82;
+    color: white;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    transition:
+        background-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.consulta-card__boton:hover {
+    background-color: #083d65;
+    transform: translateY(-1px);
+}
+
+
+.presupuesto-card {
+    width: 100%;
+    max-width: 650px;
+
+    padding: 32px;
+
+    background-color: #E4E6E9;
+
+    border-radius: 12px;
+
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+
+    box-sizing: border-box;
+}
+
+
+/* ENCABEZADO */
+
+.presupuesto-card__encabezado {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 16px;
+
+    margin-bottom: 24px;
+}
+
+.presupuesto-card__icono {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background-color: #0a4f82;
+    color: white;
+
+    font-size: 22px;
+}
+
+.presupuesto-card__encabezado h3 {
+    margin: 0 0 5px;
+
+    font-size: 20px;
+    color: #17202a;
+}
+
+.presupuesto-card__encabezado p {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 1.4;
+
+    color: #5d6670;
+}
+
+
+/* CAMPOS */
+
+.presupuesto-card__campos {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.presupuesto-card__input,
+.presupuesto-card__textarea {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #d6dce2;
+    border-radius: 4px;
+
+    font-family: inherit;
+    font-size: 14px;
+
+    outline: none;
+
+    box-sizing: border-box;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.presupuesto-card__textarea {
+    min-height: 130px;
+
+    resize: vertical;
+}
+
+
+/* FOCUS */
+
+.presupuesto-card__input:focus,
+.presupuesto-card__textarea:focus {
+    border-color: #0a4f82;
+
+    box-shadow: 0 0 0 3px rgba(10, 79, 130, 0.08);
+}
+
+
+/* BOTÓN */
+
+.presupuesto-card__boton {
+    width: 100%;
+
+    margin-top: 18px;
+    padding: 13px 20px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #0a4f82;
+    color: white;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    transition:
+        background-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.presupuesto-card__boton:hover {
+    background-color: #083d65;
+    transform: translateY(-1px);
+}
+
+.contenedor-cards {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 30px;
+
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+    .contenedor-cards {
+        flex-direction: column;
+        align-items: center;
+
+        padding: 30px 20px;
+    }
+
+    .consulta-card,
+    .presupuesto-card {
+        max-width: 650px;
+    }
+}

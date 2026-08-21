@@ -1,0 +1,68 @@
+.empresas {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.empresas__titulo {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.empresas__carrusel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.empresas__track {
+  display: flex;
+  width: max-content;
+  animation: carruselEmpresas 25s linear infinite;
+}
+
+.empresas__logo {
+  width: 200px;
+  height: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-shrink: 0;
+  padding: 20px 35px;
+}
+
+.empresas__logo img {
+  max-width: 100%;
+  max-height: 70px;
+  object-fit: contain;
+}
+
+@keyframes carruselEmpresas {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.empresas__track:hover {
+  animation-play-state: paused;
+}
+
+.empresas__logo img {
+  max-width: 100%;
+  max-height: 70px;
+  object-fit: contain;
+
+  filter: grayscale(100%);
+  opacity: 0.7;
+
+  transition: 0.3s ease;
+}
+
+.empresas__logo img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
