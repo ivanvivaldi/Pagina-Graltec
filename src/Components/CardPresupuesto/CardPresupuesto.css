@@ -1,0 +1,347 @@
+
+/* TARJETA PRINCIPAL */
+
+.consulta-card_presupuesto {
+    width: 100%;
+    max-width: 450px;
+    padding: 32px;
+
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+
+    box-sizing: border-box;
+}
+
+/* ENCABEZADO */
+
+.consulta-card__encabezado_presupuesto {
+    margin-bottom: 26px;
+}
+
+.consulta-card__encabezado_presupuesto h2 {
+    margin: 0 0 10px;
+
+    font-size: 28px;
+    font-weight: 700;
+    color: #10243d;
+}
+
+.consulta-card__encabezado_presupuesto p {
+    margin: 0;
+
+    font-size: 16px;
+    line-height: 1.5;
+    color: #5d6670;
+}
+
+/* CONTENEDOR DE LAS CUATRO TARJETAS */
+
+.consulta-card__campos_presupuesto {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* TARJETAS DE CONTACTO */
+
+.tarjetitas-contacto {
+    display: flex;
+    align-items: center;
+
+    gap: 22px;
+    min-height: 100px;
+    padding: 16px 24px;
+
+    background-color: #f3f5f7;
+    border-radius: 14px;
+
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+
+    transition: background-color 0.2s ease;
+}
+
+/* EFECTO HOVER */
+
+a.tarjetitas-contacto:hover {
+    background-color: #e8eef4;
+}
+
+/* CONTENEDOR DE LOS ÍCONOS */
+
+.div-logos-contacto {
+    width: 66px;
+    height: 66px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #0a4f82;
+    border-radius: 50%;
+}
+
+/* ÍCONO DE WHATSAPP */
+
+.div-logos-contacto--whatsapp {
+    background-color: #20bd61;
+}
+
+/* IMÁGENES DE LOS ÍCONOS */
+
+.logos-card-info-contacto {
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+}
+
+/* CONTENEDOR DE TEXTOS */
+
+.titulos-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 5px;
+    flex: 1;
+    min-width: 0;
+}
+
+/* TÍTULOS */
+
+.titulos-contacto h2 {
+    margin: 0;
+
+    font-size: 19px;
+    font-weight: 700;
+    color: #10243d;
+}
+
+/* SUBTÍTULOS */
+
+.titulos-contacto h3 {
+    margin: 0;
+
+    font-size: 17px;
+    font-weight: 400;
+    color: #526070;
+
+    overflow-wrap: anywhere;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    .consulta-card_presupuesto {
+        padding: 20px;
+    }
+
+    .consulta-card__encabezado_presupuesto h2 {
+        font-size: 23px;
+    }
+
+    .tarjetitas-contacto {
+        gap: 14px;
+        padding: 14px;
+        min-height: 90px;
+    }
+
+    .div-logos-contacto {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logos-card-info-contacto {
+        width: 27px;
+        height: 27px;
+    }
+
+    .titulos-contacto h2 {
+        font-size: 16px;
+    }
+
+    .titulos-contacto h3 {
+        font-size: 14px;
+    }
+}
+
+
+.presupuesto-card_presupuesto {
+    width:650px;
+    height: 596px;
+
+    padding: 32px;
+
+    background-color: #E4E6E9;
+
+    border-radius: 12px;
+
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+
+    box-sizing: border-box;
+}
+
+
+/* ENCABEZADO */
+
+.presupuesto-card__encabezado_presupuesto {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 16px;
+
+    margin-bottom: 24px;
+}
+
+.presupuesto-card__icono_presupuesto {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background-color: #0a4f82;
+    color: white;
+
+    font-size: 22px;
+}
+
+.presupuesto-card__encabezado_presupuesto h3 {
+    margin: 0 0 5px;
+
+    font-size: 28px;
+    color: #17202a;
+}
+
+.presupuesto-card__encabezado_presupuesto p {
+    margin: 0;
+
+    font-size: 16px;
+    line-height: 1.4;
+
+    color: #5d6670;
+}
+
+
+/* CAMPOS */
+
+.presupuesto-card__campos_presupuesto {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.presupuesto-card__input_presupuesto,
+.presupuesto-card__textarea_presupuesto {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #d6dce2;
+    border-radius: 4px;
+
+    font-family: inherit;
+    font-size: 14px;
+
+    outline: none;
+
+    box-sizing: border-box;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.presupuesto-card__textarea_presupuesto {
+    min-height: 170px;
+
+    resize: vertical;
+}
+
+
+/* FOCUS */
+
+.presupuesto-card__input_presupuesto:focus,
+.presupuesto-card__textarea_presupuesto:focus {
+    border-color: #0a4f82;
+
+    box-shadow: 0 0 0 3px rgba(10, 79, 130, 0.08);
+}
+
+
+/* BOTÓN */
+
+.presupuesto-card__boton_presupuesto {
+    width: 100%;
+
+    margin-top: 30px;
+    padding: 13px 20px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #0a4f82;
+    color: white;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    transition:
+        background-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.presupuesto-card__boton_presupuesto:hover {
+    background-color: #083d65;
+    transform: translateY(-1px);
+}
+
+.contenedor-cards_presupuesto {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 30px;
+
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+    .contenedor-cards_presupuesto {
+        flex-direction: column;
+        align-items: center;
+
+        padding: 30px 20px;
+    }
+
+    .consulta-card_presupuesto,
+    .presupuesto-card_presupuesto {
+        max-width: 650px;
+    }
+}

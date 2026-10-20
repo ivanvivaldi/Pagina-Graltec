@@ -24,12 +24,12 @@ function Footer() {
                     <div className="contactos-logos">
 
                         <div className="contacto-item">
-                            <img src="public/icons/whatsapp.png" alt="WhatsApp" />
+                            <img src="/icons/whatsapp.png" alt="WhatsApp" />
                             <span>1165325648</span>
                         </div>
 
                         <div className="contacto-item">
-                            <img src="public/icons/telefono.png" alt="Teléfono" />
+                            <img src="/icons/telefono.png" alt="Teléfono" />
                             <span>1165325648</span>
                         </div>
 

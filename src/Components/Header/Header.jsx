@@ -1,37 +1,75 @@
+import { NavLink } from 'react-router-dom'
 import './Header.css'
 
-function Header () {
-    return (
-        <header className="header">
+function Header() {
+  return (
+    <header className="header">
 
-            <div className="header__logo">
-                <img src="/logo.png" alt="Graltec S.R.L." />
-            </div>
+      <div className="header__logo">
+        <img src="/Logo-04.png" alt="Graltec S.R.L." />
+      </div>
 
-            <nav className="header__nav">
-                <a href="#inicio" className="header__link header__link--active">
-                    Inicio
-                </a>
+      <nav className="header__nav">
 
-                <a href="#cortinas" className="header__link">
-                    Cortinas Metálicas
-                </a>
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            isActive
+              ? 'header__link header__link--active'
+              : 'header__link'
+          }
+        >
+          Inicio
+        </NavLink>
 
-                <a href="#automatizaciones" className="header__link">
-                    Automatizaciones
-                </a>
+        <NavLink
+          to="/Cortinas"
+          className={({ isActive }) =>
+            isActive
+              ? 'header__link header__link--active'
+              : 'header__link'
+          }
+        >
+          Cortinas
+        </NavLink>
 
-                <a href="#contacto" className="header__link">
-                    Contacto
-                </a>
+        <NavLink
+          to="/Automatismos"
+          className={({ isActive }) =>
+            isActive
+              ? 'header__link header__link--active'
+              : 'header__link'
+          }
+        >
+          Automatismos
+        </NavLink>
 
-                <a href="#galeria" className="header__link">
-                    Galería
-                </a>
-            </nav>
+        <NavLink
+          to="/Contacto"
+          className={({ isActive }) =>
+            isActive
+              ? 'header__link header__link--active'
+              : 'header__link'
+          }
+        >
+          Contacto
+        </NavLink>
 
-        </header>
-    )
+        <NavLink
+          to="/Galeria"
+          className={({ isActive }) =>
+            isActive
+              ? 'header__link header__link--active'
+              : 'header__link'
+          }
+        >
+          Galería
+        </NavLink>
+
+      </nav>
+
+    </header>
+  )
 }
 
 export default Header

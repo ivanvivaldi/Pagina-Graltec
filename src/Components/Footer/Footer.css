@@ -1,6 +1,6 @@
 .footer-contenedor {
     width: 100%;
-    background-color: #022856;
+     background-color: #022856; 
     color: white;
     display: flex;
     justify-content: space-between;
@@ -8,7 +8,9 @@
 
     padding: 50px 8%;
     box-sizing: border-box;
-}
+    border-radius: 20px;
+}   
+ 
 .ubicacion {
     flex: 1;
 

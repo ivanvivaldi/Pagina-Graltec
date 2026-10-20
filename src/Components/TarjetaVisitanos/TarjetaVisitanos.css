@@ -1,0 +1,238 @@
+
+/* CONTENEDOR PRINCIPAL */
+
+.visitanos-contenedor {
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(0, 38fr) minmax(0, 62fr);
+    gap: 40px;
+
+    padding: 30px 40px;
+
+    background-color: #E4E6E9;
+    color: #10243d;
+
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+
+    box-sizing: border-box;
+    align-items: center;
+}
+
+/* COLUMNA IZQUIERDA */
+
+.visitanos-contacto {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.visitanos-seccion {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+/* ETIQUETA SUPERIOR */
+
+.visitanos-titulo {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #083d65;
+    font-family: sans-serif;
+}
+
+/* CONTENEDOR DE INFORMACIÓN */
+
+.visitanos-contactos-logos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ELEMENTOS DE CONTACTO */
+
+.visitanos-contacto-item {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+/* TÍTULO PRINCIPAL */
+
+.visitanos-contacto-item h2 {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.15;
+    color: #10243d;
+}
+
+/* DESCRIPCIÓN */
+
+.visitanos-descripcion {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #5d6670;
+}
+
+/* DIRECCIÓN */
+
+.visitanos-item-texto {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    font-family: sans-serif;
+}
+
+.visitanos-contacto-item img {
+    width: 46px;
+    height: 46px;
+    flex-shrink: 0;
+
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+/* TEXTOS DE DIRECCIÓN */
+
+.visitanos-contacto-item-texto {
+    min-width: 0;
+}
+
+.visitanos-contacto-item-texto span {
+    display: block;
+
+    font-size: 19px;
+    font-weight: 700;
+    color: #10243d;
+}
+
+.visitanos-contacto-item-texto p {
+    margin: 3px 0 0;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #5d6670;
+}
+
+/* BOTÓN CÓMO LLEGAR */
+
+.visitanos-boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-family: sans-serif;
+    width: 220px;
+    max-width: 100%;
+    min-height: 50px;
+
+    margin-top: 5px;
+
+    border: 1px solid #8caac0;
+    border-radius: 10px;
+
+    color: #083d65;
+    background-color: #ffffff;
+
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+.visitanos-boton:hover {
+    background-color: #083d65;
+    color: #ffffff;
+    border-color: #083d65;
+}
+
+.visitanos-boton span {
+    font-size: 21px;
+}
+
+/* COLUMNA DERECHA */
+
+.visitanos-ubicacion {
+    width: 100%;
+    min-width: 0;
+    display: flex;
+    align-items: stretch;
+}
+
+/* GOOGLE MAPS */
+
+.visitanos-ubicacion-mapa {
+    display: block;
+    width: 100%;
+    height: 420px;
+
+    border: 0;
+    border-radius: 12px;
+}
+
+/* RESPONSIVE - TABLET */
+
+@media (max-width: 900px) {
+
+    .visitanos-contenedor {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 28px;
+    }
+
+    .visitanos-contacto-item h2 {
+        font-size: 32px;
+    }
+
+    .visitanos-ubicacion-mapa {
+        height: 350px;
+    }
+}
+
+/* RESPONSIVE - CELULAR */
+
+@media (max-width: 600px) {
+
+    .visitanos-contenedor {
+        padding: 20px;
+        gap: 24px;
+    }
+
+    .visitanos-contacto-item h2 {
+        font-size: 27px;
+    }
+
+    .visitanos-descripcion {
+        font-size: 15px;
+    }
+
+    .visitanos-item-texto {
+        gap: 12px;
+    }
+
+    .visitanos-contacto-item-texto span {
+        font-size: 17px;
+    }
+
+    .visitanos-contacto-item-texto p {
+        font-size: 14px;
+    }
+
+    .visitanos-boton {
+        width: 100%;
+    }
+
+    .visitanos-ubicacion-mapa {
+        height: 300px;
+    }
+}

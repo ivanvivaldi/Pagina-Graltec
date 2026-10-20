@@ -5,52 +5,52 @@ function CarruselEmpresas() {
     {
       id: 1,
       nombre: 'AeropuertoArgentina2000',
-      logo: 'public/LogosEmpresas/aeropuertos-argentina-2000-seeklogo.png'
+      logo: '/LogosEmpresas/aeropuertos-argentina-2000-seeklogo.png'
     },
     {
       id: 2,
       nombre: 'GEA',
-      logo: 'public/LogosEmpresas/G1A.F.png'
+      logo: '/LogosEmpresas/g1a.f.png'
     },
     {
       id: 3,
       nombre: 'Tassaroli',
-      logo: 'public/LogosEmpresas/tassaroli----sa132537thumbnail.png'
+      logo: '/LogosEmpresas/tassaroli----sa132537thumbnail.png'
     },
     {
       id: 4,
       nombre: 'ConsSud',
-      logo: 'public/LogosEmpresas/constructora.png'
+      logo: '/LogosEmpresas/constructora.png'
     },
     {
       id: 5,
       nombre: 'DOT',
-      logo: 'public/LogosEmpresas/DOT.jpg'
+      logo: '/LogosEmpresas/dot.jpg'
     },
     {
       id: 6,
       nombre: 'Frigorifico',
-      logo: 'public/LogosEmpresas/Frigorifico.jpg'
+      logo: '/LogosEmpresas/frigorifico.jpg'
     },
     {
       id: 7,
       nombre: 'eyelit',
-      logo: 'public/LogosEmpresas/logo-color-eyelit.png'
+      logo: '/LogosEmpresas/logo-color-eyelit.png'
     },
     {
       id: 8,
       nombre: 'miniso',
-      logo: 'public/LogosEmpresas/miniso-seeklogo.png'
+      logo: '/LogosEmpresas/miniso-seeklogo.png'
     },
     {
       id: 9,
       nombre: 'freshmarket',
-      logo: 'public/LogosEmpresas/the-fresh-market-seeklogo.png'
+      logo: '/LogosEmpresas/the-fresh-market-seeklogo.png'
     },
     {
       id: 10,
       nombre: 'ypf',
-      logo: 'public/LogosEmpresas/YPF_logo_PNG1.png'
+      logo: '/LogosEmpresas/ypf.png'
     }
   ]
 

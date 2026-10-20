@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.contenedor_accesorios{
+    text-align:center;
+    background-color: #E4E6E9;
+    border-radius: 20px;
+   
+    margin-top: 33.2px;
+
+}
+
+.contenedor_h2_accesorios{
+    filter: brightness(0) saturate(100%) invert(34%) sepia(93%)
+        saturate(1200%) hue-rotate(175deg) brightness(60%) contrast(101%);
+    font-size: 40px;
+    font-family: 'roboto';
+    margin-bottom: 5px;
+    border-top-left-radius: 20px;
+    margin-top: 33.2px;
+    padding-top: 30px;
+    margin-left: 90px;
+}
+
+.contenedor_h1_accesorios{
+    font-size: 50px;
+    font-family: 'roboto';
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    background-color: #E4E6E9;
+    padding-top: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
