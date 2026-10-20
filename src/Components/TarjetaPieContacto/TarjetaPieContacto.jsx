@@ -1,6 +1,8 @@
 import './TarjetaPieContacto.css';
+import { useNavigate } from 'react-router-dom'
 
 function TarjetaPieContacto() {
+    const navigate = useNavigate()
     return (
         <section className="contacto-hero-pie">
 
@@ -31,13 +33,15 @@ function TarjetaPieContacto() {
                     </p>
                 </div>
                 <div>
-                 <button
+                   <button
                     type="submit"
                     className="consulta-card__boton-pie"
-                    >
+                    onClick={() => navigate('/Contacto#solicitar-presupuesto')}
+                    >    
                     Solicitar presupuesto
                     <span>➢</span>
-                    </button>
+                    </button> 
+                    
                 </div>
             </div>
                

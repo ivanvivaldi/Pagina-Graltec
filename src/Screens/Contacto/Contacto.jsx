@@ -6,7 +6,7 @@ import TarjetaPieContacto from '../../Components/TarjetaPieContacto/TarjetaPieCo
 
 export default function Contacto() {
   return (
-    <div>
+    <div  id="solicitar-presupuesto" className="contacto-tarjetas">
       <TarjetaAzulContacto/>
       <CardPresupuesto/>
       <TarjetaVisitanos/>

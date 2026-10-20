@@ -1,6 +1,8 @@
 import './TarjetasCortinas.css'
+import { useNavigate } from 'react-router-dom'
 
 function TarjetasCortinas (props) {
+    const navigate = useNavigate()
     return (
         <div className="tarjeta">
 
@@ -24,7 +26,9 @@ function TarjetasCortinas (props) {
                     {props.description}
                 </p>
 
-                <button className="tarjeta__boton">
+                <button type= "button" 
+                        className="tarjeta__boton"
+                        onClick={() => navigate('/Contacto#solicitar-presupuesto')}>
                     Ver más
                     <span>→</span>
                     <br />
