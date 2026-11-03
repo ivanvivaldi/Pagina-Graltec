@@ -14,54 +14,172 @@ export default function CortinasMetalicas() {
       <div>
         <DivCortinas/>
       </div>
-    <div className='tarjeta-contenedor'>
-     <TarjetasCortinas 
-          title="Galvanizada Reforzada"
-          description="La variedad de nuestros modelos combina seguridad, diseño y durabilidad."
-          img="/imagenes/cortina metalica.png"/>
-     <TarjetasCortinas 
-          title="Galvanizada Microperforada"
-          description="La variedad de nuestros modelos combina seguridad, diseño y durabilidad."
-          img="/imagenes/CORTINA_MICRO3.jpg"/>
-     <TarjetasCortinas
-          title="Tablilla Ancha Galvanizada"
-          description="La variedad de nuestros modelos combina seguridad, diseño y durabilidad."
-          img="/imagenes/cortina metalica.png"/>
-     <TarjetasCortinas
-          title="Tablilla Microperforada Ancha"
-          description="La variedad de nuestros modelos combina seguridad, diseño y durabilidad."
-          img="/imagenes/foto_Ancha_micro.png"/>
-     <TarjetasCortinas
-          title="Standard"
-          description="La variedad de nuestros modelos combina seguridad, diseño y durabilidad."
-          img="imagenes/standard-3.jpg"/>
-    </div>
+          <div className="tarjeta-contenedor">
+
+    <TarjetasCortinas
+        title="Galvanizada Reforzada"
+        variantes={[
+            {
+                nombre: "Ciega",
+                img: "/imagenes/cortina metalica.png",
+                description: "La variedad de nuestros modelos combina seguridad, diseño y durabilidad. Disponible en espesor 0,7 mm y 0,9 mm."
+            },
+            {
+                nombre: "Microperforada",
+                img:"/imagenes/CORTINA_MICRO2.jpg",
+                description: "Variante microperforada de nuestra cortina galvanizada reforzada, permite visibilidad y ventilación. Ideal para comercios y locales."
+            }
+        ]}
+    />
+
+    <TarjetasCortinas
+        title="Tablilla Ancha Galvanizada"
+        variantes={[
+            {
+                nombre: "Ciega",
+                img: "/imagenes/FRESH MARKET Libertad con persianas limpias.png",
+                description: "Uno de nuestros modelos que combina seguridad, diseño y robustez, ideal para galpones y tinglados. Disponible en espesor 0,7 mm y 0,9 mm."
+            },
+            {
+                nombre: "Microperforada",
+                img: "/imagenes/foto_Ancha_micro.png",
+                description: "Variante microperforada de nuestra cortina de tablilla ancha, pensada para aquellos proyectos que requieran visivilidad, luz natural y vision al exterior."
+            }
+        ]}
+    />
+
+    <TarjetasCortinas
+        title="Standard"
+        variantes={[
+            {
+                nombre: "Ciega",
+                img: "/imagenes/standard-3.jpg",
+                description: "La variedad de nuestros modelos combina seguridad, diseño y durabilidad. Disponible en espesor 0,5 mm y 0,7 mm"
+            },
+            {
+                nombre: "Microperforada",
+                img: "/imagenes/standard-3.jpg",
+                description: "Variante microperforada de nuestra cortina standard."
+            }
+        ]}
+    />
+
+</div>
       <div>
         <DivTablillas/>
       </div>
 
-      <div className='tarjeta-contenedor'>
-     <TarjetasTablillas 
-          title="Tablilla Galvanizada Reforzada"
-          description="La variedad de nuestros modelos combina seguridad, diseño y durabilidad."
-          img="/imagenes/galva_ref1.jpg"/>
+      
+<div className="tarjeta-contenedor_tablillas">
+
+    
+
      <TarjetasTablillas
-          title="Tablillas Galvanizada Microperforada"
-          description="La variedad de nuestros modelos combina seguridad, diseño y durabilidad."
-          img="/imagenes/galva_micro.jpg"/>
-     <TarjetasTablillas
-          title="Tablilla Ancha Galvanizada"
-          description="La variedad de nuestros modelos combina seguridad, diseño y durabilidad."
-          img="/imagenes/galva_ancha1.jpg"/>
-     <TarjetasTablillas
-          title="Tablilla Microperforada Ancha"
-          description="La variedad de nuestros modelos combina seguridad, diseño y durabilidad."
-          img="/imagenes/galva_ancha_micro.jpg"/>
-     <TarjetasTablillas
-          title="Tablilla Standard"
-          description="La variedad de nuestros modelos combina seguridad, diseño y durabilidad."
-          img="/imagenes/std.jpg"/>
-    </div>
+     title="Tablilla Galvanizada Reforzada"
+     variantes={[
+          {
+               nombre: "Ciega",
+
+               imagenes: [
+                    "/imagenes/galva_ref1.jpg",
+                    "/imagenes/Lamas metálicas galvanizadas entrelazadas.png",
+                    "/imagenes/plano-galv-ref.png"
+               ],
+
+               planos: [
+                    "/imagenes/plano-galv-ref.png"
+               ],
+
+               description: "La variedad de nuestros modelos combina seguridad, diseño y durabilidad."
+          },
+          {
+               nombre: "Microperforada",
+
+               imagenes: [
+                    "/imagenes/galva_micro.jpg",
+                    "/imagenes/Dos lamas metálicas perforadas en perspectiva.png",
+                    "/imagenes/plano-galv-ref.png"
+               ],
+
+                planos: [
+                    "/imagenes/plano-galv-ref.png"
+               ],
+
+               description: "Variante microperforada de nuestra tablilla galvanizada reforzada."
+          }
+     ]}
+     />
+
+
+
+    <TarjetasTablillas
+        title="Tablilla Ancha Galvanizada"
+        variantes={[
+            {
+                nombre: "Ciega",
+                imagenes: [
+                    "/imagenes/galva_ancha1.jpg",
+                    "/imagenes/Paneles de acero galvanizado texturizado.png",
+                    "/imagenes/plano-ancha.png"
+                ],
+
+                  planos: [
+                    "/imagenes/plano-ancha.png"
+               ],
+
+                description: "La variedad de nuestros modelos combina seguridad, diseño y durabilidad."
+            },
+            {
+                nombre: "Microperforada",
+                imagenes: [
+                    "/imagenes/galva_ancha_micro.jpg",
+                    "/imagenes/Panel metálico perforado galvanizado.png",
+                    "/imagenes/plano-ancha.png"
+                ],
+
+                 planos: [
+                    "/imagenes/plano-ancha.png"
+               ],
+
+                description: "Variante microperforada de nuestra tablilla ancha galvanizada."
+            }
+        ]}
+    />
+
+    <TarjetasTablillas
+        title="Tablilla Standard"
+        variantes={[
+            {
+                nombre: "Ciega",
+                imagenes: [
+                    "/imagenes/std.jpg",
+                    "/imagenes/Perfil de acero galvanizado en primer plano.png",
+                    "/imagenes/file_000000009cb4820ea88bcd2bd09d7adb.png"
+                ],
+                   planos: [
+                    "/imagenes/file_000000009cb4820ea88bcd2bd09d7adb.png"
+               ],
+                description: "La variedad de nuestros modelos combina seguridad, diseño y durabilidad."
+            },
+            {
+                nombre: "Microperforada",
+                imagenes: [
+                    "/imagenes/standard-2.jpg",
+                    "/imagenes/Lámina metálica corrugada perforada.png",
+                    "/imagenes/file_000000009cb4820ea88bcd2bd09d7adb.png"
+               ],
+
+               planos: [
+                    "/imagenes/file_000000009cb4820ea88bcd2bd09d7adb.png"
+               ],
+               
+                description: "Variante microperforada de nuestra tablilla Standard."
+            }
+        ]}
+    />
+
+</div>
+
           <div>
                <DivAccesorios/>
           </div>

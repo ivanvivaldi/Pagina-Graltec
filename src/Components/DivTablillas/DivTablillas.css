@@ -3,9 +3,10 @@
 .contenedor_tablillas{
     text-align:center;
     background-color: #E4E6E9;
-    border-radius: 20px;
-   
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     margin-top: 33.2px;
+    height: 80px;
 
 }
 
@@ -18,7 +19,7 @@
     border-top-left-radius: 20px;
     margin-top: 33.2px;
     padding-top: 30px;
-    margin-left: 90px;
+   /*  margin-left: 90px; */
 }
 
 .contenedor_h1_tablillas{

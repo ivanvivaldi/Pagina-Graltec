@@ -30,7 +30,7 @@ function Header() {
               : 'header__link'
           }
         >
-          Cortinas
+          Productos
         </NavLink>
 
         <NavLink

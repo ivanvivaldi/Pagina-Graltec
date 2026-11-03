@@ -4,7 +4,7 @@ function DivAccesorios (){
     return(
     <div>
         <div className="contenedor_tablillas">
-            <h1 className='contenedor_h1_tablillas'>Accesorios</h1>
+            <h2 className='contenedor_h2_accesorios'>Accesorios</h2>
         </div>
     </div>
     )

@@ -5,6 +5,7 @@
     background-color: #E4E6E9;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    height: 100px;
 
 }
 
@@ -17,9 +18,9 @@
     border-top-left-radius: 20px;
     margin-top: 33.2px;
     padding-top: 30px;
-    margin-left: 90px;
+    /* margin-left: 90px; */
 }
-
+/* 
 .contenedor_h1{
     font-size: 50px;
     font-family: 'roboto';
@@ -28,5 +29,5 @@
     margin-bottom: 0px;
     background-color: #E4E6E9;
     margin-left: 90px;
-}
+} */
 

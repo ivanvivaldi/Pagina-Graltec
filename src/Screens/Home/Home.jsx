@@ -21,7 +21,7 @@ function Home() {
         />
 
         <Tarjetas
-          title="Automatizaciones"
+          title="Automatismos"
           description="Motores y sistemas de automatización para cortinas y portones."
           img="/imagenes/paralelos_recortada.png"
         />

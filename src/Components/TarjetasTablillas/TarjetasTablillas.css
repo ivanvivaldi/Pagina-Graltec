@@ -1,33 +1,36 @@
-.tarjeta-contenedor_tablillas{
-  
+
+/* CONTENEDOR DE TARJETAS */
+
+.tarjeta-contenedor_tablillas {
     width: 100%;
-    max-width: 100%;
-
     margin: 0 auto;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: stretch;
-
-    gap: 20px;
-
-    padding: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     box-sizing: border-box;
-    background-color: #e4e6e9;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
- 
 
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 15px;
+
+    background-color: #e4e6e9;
+    border-radius: 0 0 20px 20px;
 }
+
+
+/* TARJETA */
 
 .tarjeta_tablillas {
     width: 100%;
+    min-width: 0;
     max-width: 450px;
+    margin: 0 auto;
 
-    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
 
-    border-radius: 12px;
+    background-color: #ffffff;
+    border-radius: 16px;
     overflow: hidden;
 
     box-shadow: 0 6px 22px rgba(0, 0, 0, 0.08);
@@ -35,7 +38,6 @@
     transition:
         transform 0.3s ease,
         box-shadow 0.3s ease;
-    
 }
 
 
@@ -43,17 +45,17 @@
 
 .tarjeta__imagen-contenedor_tablillas {
     width: 100%;
-    height: 300px;
+    height: 500px;
     overflow: hidden;
+    background-color: #e9edf0;
 }
 
 .tarjeta__imagen_tablillas {
+    display: block;
     width: 100%;
     height: 100%;
 
     object-fit: cover;
-
-    display: block;
 
     transition: transform 0.5s ease;
 }
@@ -62,121 +64,336 @@
 /* CONTENIDO */
 
 .tarjeta__contenido_tablillas {
-    padding: 32px 30px 35px;
+    padding: 25px;
 
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
+    flex: 1;
 
-    text-align: center;
+    text-align: left;
 }
 
 
 /* TITULO */
 
 .tarjeta__titulo_tablillas {
-    margin: 0 0 15px;
+    margin: 0 0 18px;
+
     font-family: sans-serif;
     font-size: 24px;
     font-weight: 700;
 
-    color: #151f2b;
+    color: #0b3154;
 }
 
 
-/* DESCRIPCIÓN */
+/* DESCRIPCION */
 
 .tarjeta__descripcion_tablillas {
-    margin: 0;
+    margin: 0 0 25px;
 
-    min-height: 50px;
+    font-size: 20px;
+    line-height: 1.6;
 
-    font-size: 18px;
-    line-height: 1.5;
-
-    color: #0b0c0c;
+    color: #1c242c;
 }
 
 
-/* BOTÓN */
+/* BOTON */
 
 .tarjeta__boton_tablillas {
-    margin-top: 27px;
+    width: 100%;
+    min-height: 52px;
 
-    padding: 16px 60px;
+    margin-top: auto;
+    padding: 13px 16px;
 
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 14px;
+    gap: 10px;
 
-    background-color: transparent;
+    background-color: #0a4f82;
 
     border: 1.5px solid #0a4f82;
-    border-radius: 20px;
+    border-radius: 10px;
 
-    color: #0a4f82;
+    color: #ffffff;
 
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
 
     cursor: pointer;
 
     transition:
         background-color 0.25s ease,
-        color 0.25s ease,
         transform 0.25s ease;
 }
 
 .tarjeta__boton_tablillas span {
-    font-size: 19px;
-
     transition: transform 0.25s ease;
+}
+
+
+/* FOCUS ACCESIBLE */
+
+.tarjeta__boton_tablillas:focus-visible {
+    outline: 3px solid #29a7ed;
+    outline-offset: 3px;
 }
 
 
 /* HOVER */
 
-.tarjeta_tablillas:hover {
-    transform: translateY(-5px);
+@media (hover: hover) {
 
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
-}
+    .tarjeta_tablillas:hover {
+        transform: translateY(-5px);
 
-.tarjeta_tablillas:hover .tarjeta__imagen_tablillas {
-    transform: scale(1.025);
-}
-
-.tarjeta__boton_tablillas:hover {
-    background-color: #0a4f82;
-    color: #ffffff;
-}
-
-.tarjeta__boton_tablillas:hover span {
-    transform: translateX(4px);
-}
-
-
-/* RESPONSIVE */
-
-@media (max-width: 768px) {
-
-    .tarjeta {
-        max-width: 100%;
+        box-shadow:
+            0 12px 30px rgba(0, 0, 0, 0.12);
     }
 
-    .tarjeta__imagen-contenedor {
-        height: 210px;
+    .tarjeta_tablillas:hover
+    .tarjeta__imagen_tablillas {
+        transform: scale(1.025);
     }
 
-    .tarjeta__contenido {
-        padding: 27px 22px 30px;
+    .tarjeta__boton_tablillas:hover {
+        background-color: #07395e;
     }
 
-    .tarjeta__titulo {
+    .tarjeta__boton_tablillas:hover span {
+        transform: translateX(4px);
+    }
+}
+
+
+/* TABLETS */
+
+@media (max-width: 1100px) {
+
+    .tarjeta-contenedor_tablillas {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        padding: 30px;
+    }
+
+    .tarjeta__imagen-contenedor_tablillas {
+        height: 260px;
+    }
+
+}
+
+
+/* CELULARES */
+
+@media (max-width: 650px) {
+
+    .tarjeta-contenedor_tablillas {
+        grid-template-columns: 1fr;
+
+        gap: 22px;
+        padding: 20px;
+    }
+
+    .tarjeta_tablillas {
+        max-width: 450px;
+    }
+
+    .tarjeta__imagen-contenedor_tablillas {
+        height: 230px;
+    }
+
+    .tarjeta__contenido_tablillas {
+        padding: 22px;
+    }
+
+    .tarjeta__titulo_tablillas {
         font-size: 22px;
     }
 
-    .tarjeta__descripcion {
+    .tarjeta__descripcion_tablillas {
         font-size: 15px;
     }
+
+}
+
+/* SELECTOR DE VARIANTES */
+
+.tarjeta__variantes_tablillas {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 22px;
+}
+
+.tarjeta__variantes-label_tablillas {
+    font-size: 15px;
+    font-weight: 600;
+    color: #151f2b;
+}
+
+.tarjeta__variantes-opciones_tablillas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.tarjeta__variante-boton_tablillas {
+    padding: 9px 15px;
+
+    border: 1px solid #b6c0ca;
+    border-radius: 24px;
+
+    background-color: #f5f7f9;
+    color: #243447;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.tarjeta__variante-boton_tablillas.activa {
+    background-color: #0a4f82;
+    color: white;
+    border-color: #0a4f82;
+}
+
+.tarjeta__variante-boton_tablillas:not(.activa):hover {
+    background-color: #e1eaf2;
+    border-color: #0a4f82;
+}
+
+.tarjeta__variante-boton_tablillas:focus-visible {
+    outline: 3px solid #29a7ed;
+    outline-offset: 3px;
+}
+
+@media (max-width: 650px) {
+    .tarjeta__variante-boton_tablillas {
+        font-size: 13px;
+    }
+}
+
+/* CONTENEDOR PARA LAS FLECHAS */
+
+.tarjeta__imagen-contenedor_tablillas {
+    position: relative;
+}
+
+
+/* FLECHAS DEL CARRUSEL */
+
+.tarjeta__flecha_tablillas {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #0a4f82;
+
+    font-size: 32px;
+    line-height: 1;
+
+    cursor: pointer;
+    z-index: 2;
+
+    transition:
+        background-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.tarjeta__flecha_tablillas--izquierda {
+    left: 12px;
+}
+
+.tarjeta__flecha_tablillas--derecha {
+    right: 12px;
+}
+
+.tarjeta__flecha_tablillas:hover {
+    background-color: #ffffff;
+    transform: translateY(-50%) scale(1.08);
+}
+
+
+/* INDICADORES DE FOTOGRAFÍAS */
+
+.tarjeta__indicadores_tablillas {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 8px 12px;
+    border-radius: 20px;
+
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+.tarjeta__indicador_tablillas {
+    width: 9px;
+    height: 9px;
+
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 255, 0.55);
+
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.tarjeta__indicador_tablillas.activo {
+    width: 22px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.tarjeta__flecha_tablillas:focus-visible,
+.tarjeta__indicador_tablillas:focus-visible {
+    outline: 3px solid #29a7ed;
+    outline-offset: 3px;
+}
+
+/* IMAGENES DE PLANOS TECNICOS */
+
+.tarjeta__imagen_tablillas.plano-tecnico {
+    width: 90%;
+    height: 90%;
+
+    object-fit: contain;
+    margin: auto;
+}
+
+/* CENTRAR EL PLANO */
+
+.tarjeta__imagen-contenedor_tablillas:has(.plano-tecnico) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }

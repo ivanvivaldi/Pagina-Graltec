@@ -4,7 +4,7 @@ function DivTablillas (){
     return(
     <div>
         <div className="contenedor_tablillas">
-            <h1 className='contenedor_h1_tablillas'>Tablillas</h1>
+            <h2 className='contenedor_h2_tablillas'>Tablillas</h2>
         </div>
     </div>
     )

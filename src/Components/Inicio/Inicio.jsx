@@ -12,7 +12,7 @@ function Inicio (){
             loop
             playsInline
         >
-            <source src="/videos/1015 (1).mp4" type="video/mp4" />
+            <source src="/videos/1015 (2).mp4" type="video/mp4" />
         </video>
 
         {/* CAPA OSCURA SOBRE EL VIDEO */}
