@@ -1,6 +1,8 @@
 import './Tarjetas.css'
+import { useNavigate } from 'react-router-dom'
 
 function Tarjetas (props) {
+    const navigate = useNavigate()
     return (
         <div className="tarjeta">
 
@@ -24,7 +26,8 @@ function Tarjetas (props) {
                     {props.description}
                 </p>
 
-                <button className="tarjeta__boton">
+                <button className="tarjeta__boton"
+                onClick={() => navigate(props.destino)}>
                     Ver más
                     <span>→</span>
                 </button>

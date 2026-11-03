@@ -11,175 +11,181 @@ export default function CortinasMetalicas() {
   return (
 
     <div>
-      <div>
-        <DivCortinas/>
-      </div>
-          <div className="tarjeta-contenedor">
+          <section id="cortinas-metalicas">
+               <div>
+               <DivCortinas/>
+               </div>
+                    <div className="tarjeta-contenedor">
 
-    <TarjetasCortinas
-        title="Galvanizada Reforzada"
-        variantes={[
-            {
-                nombre: "Ciega",
-                img: "/imagenes/cortina metalica.png",
-                description: "La variedad de nuestros modelos combina seguridad, diseño y durabilidad. Disponible en espesor 0,7 mm y 0,9 mm."
-            },
-            {
-                nombre: "Microperforada",
-                img:"/imagenes/CORTINA_MICRO2.jpg",
-                description: "Variante microperforada de nuestra cortina galvanizada reforzada, permite visibilidad y ventilación. Ideal para comercios y locales."
-            }
-        ]}
-    />
+                         <TarjetasCortinas
+                              title="Galvanizada Acorazada"
+                              variantes={[
+                                   {
+                                        nombre: "Ciega",
+                                        img: "/imagenes/cortina metalica.png",
+                                   
 
-    <TarjetasCortinas
-        title="Tablilla Ancha Galvanizada"
-        variantes={[
-            {
-                nombre: "Ciega",
-                img: "/imagenes/FRESH MARKET Libertad con persianas limpias.png",
-                description: "Uno de nuestros modelos que combina seguridad, diseño y robustez, ideal para galpones y tinglados. Disponible en espesor 0,7 mm y 0,9 mm."
-            },
-            {
-                nombre: "Microperforada",
-                img: "/imagenes/foto_Ancha_micro.png",
-                description: "Variante microperforada de nuestra cortina de tablilla ancha, pensada para aquellos proyectos que requieran visivilidad, luz natural y vision al exterior."
-            }
-        ]}
-    />
+                                        description: "La variedad de nuestros modelos combina seguridad, diseño y durabilidad. Disponible en espesor 0,7 mm y 0,9 mm."
+                                   },
+                                   {
+                                        nombre: "Microperforada",
+                                        img:"/imagenes/CORTINA_MICRO2.jpg",
+                                        description: "Variante microperforada de nuestra cortina galvanizada reforzada, permite visibilidad y ventilación. Ideal para comercios y locales."
+                                   }
+                              ]}
+                         />
 
-    <TarjetasCortinas
-        title="Standard"
-        variantes={[
-            {
-                nombre: "Ciega",
-                img: "/imagenes/standard-3.jpg",
-                description: "La variedad de nuestros modelos combina seguridad, diseño y durabilidad. Disponible en espesor 0,5 mm y 0,7 mm"
-            },
-            {
-                nombre: "Microperforada",
-                img: "/imagenes/standard-3.jpg",
-                description: "Variante microperforada de nuestra cortina standard."
-            }
-        ]}
-    />
+                         <TarjetasCortinas
+                              title="Tablilla Ancha Galvanizada"
+                              variantes={[
+                                   {
+                                        nombre: "Ciega",
+                                        img: "/imagenes/FRESH MARKET Libertad con persianas limpias.png",
+                                        description: "Uno de nuestros modelos que combina seguridad, diseño y robustez, ideal para galpones , tinglados y grandes comercios. Disponible en espesor 0,7 mm y 0,9 mm."
+                                   },
+                                   {
+                                        nombre: "Microperforada",
+                                        img: "/imagenes/foto_Ancha_micro.png",
+                                        description: "Variante microperforada de nuestra cortina de tablilla ancha, pensada para aquellos proyectos que requieran visivilidad, luz natural y vision al exterior."
+                                   }
+                              ]}
+                         />
 
-</div>
+                         <TarjetasCortinas
+                              title="Standard"
+                              variantes={[
+                                   {
+                                        nombre: "Ciega",
+                                        img: "/imagenes/standard-3.jpg",
+                                        description: "La variedad de nuestros modelos combina seguridad, diseño y durabilidad. Disponible en espesor 0,5 mm y 0,7 mm"
+                                   },
+                                   {
+                                        nombre: "Microperforada",
+                                        img: "/imagenes/standard-3.jpg",
+                                        description: "Variante microperforada de nuestra cortina standard."
+                                   }
+                              ]}
+                         />
+          
+          </div>
+     </section>
+     <section id="tablillas">
       <div>
         <DivTablillas/>
       </div>
 
       
-<div className="tarjeta-contenedor_tablillas">
+               <div className="tarjeta-contenedor_tablillas">
 
-    
+     
 
-     <TarjetasTablillas
-     title="Tablilla Galvanizada Reforzada"
-     variantes={[
-          {
-               nombre: "Ciega",
+                         <TarjetasTablillas
+                         title="Tablilla Galvanizada"
+                         variantes={[
+                              {
+                                   nombre: "Ciega",
 
-               imagenes: [
-                    "/imagenes/galva_ref1.jpg",
-                    "/imagenes/Lamas metálicas galvanizadas entrelazadas.png",
-                    "/imagenes/plano-galv-ref.png"
-               ],
+                                   imagenes: [
+                                        "/imagenes/galva_ref1.jpg",
+                                        "/imagenes/Lamas metálicas galvanizadas entrelazadas.png",
+                                        "/imagenes/plano-galv-ref.png"
+                                   ],
 
-               planos: [
-                    "/imagenes/plano-galv-ref.png"
-               ],
+                                   planos: [
+                                        "/imagenes/plano-galv-ref.png"
+                                   ],
 
-               description: "La variedad de nuestros modelos combina seguridad, diseño y durabilidad."
-          },
-          {
-               nombre: "Microperforada",
+                                   description: " Medidas: 84 mm x 12 mm x 64 mm. Disponible en espesores 0,7 mm y 0,9 mm."
+                              },
+                              {
+                                   nombre: "Microperforada",
 
-               imagenes: [
-                    "/imagenes/galva_micro.jpg",
-                    "/imagenes/Dos lamas metálicas perforadas en perspectiva.png",
-                    "/imagenes/plano-galv-ref.png"
-               ],
+                                   imagenes: [
+                                        "/imagenes/galva_micro.jpg",
+                                        "/imagenes/Dos lamas metálicas perforadas en perspectiva.png",
+                                        "/imagenes/plano-galv-ref.png"
+                                   ],
 
-                planos: [
-                    "/imagenes/plano-galv-ref.png"
-               ],
+                                   planos: [
+                                        "/imagenes/plano-galv-ref.png"
+                                   ],
 
-               description: "Variante microperforada de nuestra tablilla galvanizada reforzada."
-          }
-     ]}
-     />
+                                   description: "Variante microperforada de nuestra tablilla galvanizada reforzada."
+                              }
+                         ]}
+                         />
 
 
 
-    <TarjetasTablillas
-        title="Tablilla Ancha Galvanizada"
-        variantes={[
-            {
-                nombre: "Ciega",
-                imagenes: [
-                    "/imagenes/galva_ancha1.jpg",
-                    "/imagenes/Paneles de acero galvanizado texturizado.png",
-                    "/imagenes/plano-ancha.png"
-                ],
+                    <TarjetasTablillas
+                         title="Tablilla Ancha Galvanizada"
+                         variantes={[
+                              {
+                                   nombre: "Ciega",
+                                   imagenes: [
+                                        "/imagenes/galva_ancha1.jpg",
+                                        "/imagenes/Paneles de acero galvanizado texturizado.png",
+                                        "/imagenes/plano-ancha.png"
+                                   ],
 
-                  planos: [
-                    "/imagenes/plano-ancha.png"
-               ],
+                                   planos: [
+                                        "/imagenes/plano-ancha.png"
+                                   ],
 
-                description: "La variedad de nuestros modelos combina seguridad, diseño y durabilidad."
-            },
-            {
-                nombre: "Microperforada",
-                imagenes: [
-                    "/imagenes/galva_ancha_micro.jpg",
-                    "/imagenes/Panel metálico perforado galvanizado.png",
-                    "/imagenes/plano-ancha.png"
-                ],
+                                   description: "Medidas: 125 mm x 15 mm x 85 mm. Disponible en espesores 0,7 mm y 0,9 mm."
+                              },
+                              {
+                                   nombre: "Microperforada",
+                                   imagenes: [
+                                        "/imagenes/galva_ancha_micro.jpg",
+                                        "/imagenes/Panel metálico perforado galvanizado.png",
+                                        "/imagenes/plano-ancha.png"
+                                   ],
 
-                 planos: [
-                    "/imagenes/plano-ancha.png"
-               ],
+                                   planos: [
+                                        "/imagenes/plano-ancha.png"
+                                   ],
 
-                description: "Variante microperforada de nuestra tablilla ancha galvanizada."
-            }
-        ]}
-    />
+                                   description: "Variante microperforada de nuestra tablilla ancha galvanizada."
+                              }
+                         ]}
+                    />
 
-    <TarjetasTablillas
-        title="Tablilla Standard"
-        variantes={[
-            {
-                nombre: "Ciega",
-                imagenes: [
-                    "/imagenes/std.jpg",
-                    "/imagenes/Perfil de acero galvanizado en primer plano.png",
-                    "/imagenes/file_000000009cb4820ea88bcd2bd09d7adb.png"
-                ],
-                   planos: [
-                    "/imagenes/file_000000009cb4820ea88bcd2bd09d7adb.png"
-               ],
-                description: "La variedad de nuestros modelos combina seguridad, diseño y durabilidad."
-            },
-            {
-                nombre: "Microperforada",
-                imagenes: [
-                    "/imagenes/standard-2.jpg",
-                    "/imagenes/Lámina metálica corrugada perforada.png",
-                    "/imagenes/file_000000009cb4820ea88bcd2bd09d7adb.png"
-               ],
+                    <TarjetasTablillas
+                         title="Tablilla Standard"
+                         variantes={[
+                              {
+                                   nombre: "Ciega",
+                                   imagenes: [
+                                        "/imagenes/std.jpg",
+                                        "/imagenes/Perfil de acero galvanizado en primer plano.png",
+                                        "/imagenes/file_000000009cb4820ea88bcd2bd09d7adb.png"
+                                   ],
+                                   planos: [
+                                        "/imagenes/file_000000009cb4820ea88bcd2bd09d7adb.png"
+                                   ], 
+                                   description: "Medidas: 67 mm x 1 0mm x 49 mm. Disponible en espesores 0,5 mm y 0,7 mm."
+                              },
+                              {
+                                   nombre: "Microperforada",
+                                   imagenes: [
+                                        "/imagenes/standard-2.jpg",
+                                        "/imagenes/Lámina metálica corrugada perforada.png",
+                                        "/imagenes/file_000000009cb4820ea88bcd2bd09d7adb.png"
+                                   ],
 
-               planos: [
-                    "/imagenes/file_000000009cb4820ea88bcd2bd09d7adb.png"
-               ],
-               
-                description: "Variante microperforada de nuestra tablilla Standard."
-            }
-        ]}
-    />
+                                   planos: [
+                                        "/imagenes/file_000000009cb4820ea88bcd2bd09d7adb.png"
+                                   ],
 
-</div>
+                                   description: "Variante microperforada de nuestra tablilla Standard."
+                              }
+                         ]}
+                    />
 
+                    </div>
+               </section>
+               <section id='Accesorios'>
           <div>
                <DivAccesorios/>
           </div>
@@ -187,16 +193,31 @@ export default function CortinasMetalicas() {
                 <TarjetasAccesorios 
                     title="Guias de seguridad"
                     description="Contamos con Guias de seguridad de 50 x 20; 60 x 40; 80 x 50 y 100 x 50."
-                    img="/imagenes/guias.jpg"/>
+                    imagenes={[
+                         "/imagenes/guias.jpg",
+                         "/imagenes/Guía de seguridad_ perfil U 50 x 20.png",
+                         "/imagenes/Guía de seguridad 60 x 40.png",
+                         "/imagenes/guia80x50ok.png",
+                         "/imagenes/Guía de seguridad 100 x 50.png" 
+                    ]}
+                    />
                <TarjetasAccesorios 
                     title="Tubos octogonales"
                     description="Contamos con tubos octogonales desde 13mm hasta 35mm Ofrecemos tambien tubo de 4 pulgadas."
                     img="/imagenes/tubos.jpg"/>
                <TarjetasAccesorios
-                    title="Engranajes de fundición"
+                    title="Kits de fundicion y otros"
                     description="Ofrecemos kits de engranajes para refuccion de motores semiblindados y accesorios."
-                    img="/imagenes/engranajes fundicion.jpg"/>
+                    imagenes={[
+                         "/imagenes/contram.Z36.png",
+                         "/imagenes/eng-fund.png",
+                         "/imagenes/volantin.png",
+                         "/imagenes/kit-accesorios-motorparalelo.png",
+                         "/imagenes/tablero-paralelo.png",
+                    ]}     
+                    />
           </div>
+          </section>
     </div>
   )
 }
