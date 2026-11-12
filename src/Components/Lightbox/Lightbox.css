@@ -1,0 +1,197 @@
+
+
+/* FONDO GENERAL */
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+  height: 100dvh;
+
+  background-color: rgba(8, 15, 25, 0.94);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 99999;
+
+  box-sizing: border-box;
+  padding: 65px 75px;
+}
+
+/* CONTENEDOR DE IMAGEN */
+
+.lightbox__contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 100%;
+  max-height: 100%;
+
+  min-width: 0;
+}
+
+/* IMAGEN */
+
+.lightbox__imagen {
+  display: block;
+
+  max-width: 100%;
+  max-height: calc(100dvh - 155px);
+
+  width: auto;
+  height: auto;
+
+  object-fit: contain;
+
+  border-radius: 8px;
+
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25);
+}
+
+/* BOTÓN CERRAR */
+
+.lightbox__cerrar {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+
+  color: white;
+  font-size: 32px;
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.lightbox__cerrar:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.05);
+}
+
+/* FLECHAS */
+
+.lightbox__flecha {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 46px;
+  height: 56px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.1);
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+
+  color: white;
+  font-size: 40px;
+
+  cursor: pointer;
+
+  transition: background-color 0.2s ease;
+}
+
+.lightbox__flecha:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.lightbox__flecha--anterior {
+  left: 20px;
+}
+
+.lightbox__flecha--siguiente {
+  right: 20px;
+}
+
+/* CONTADOR */
+
+.lightbox__contador {
+  margin-top: 16px;
+
+  color: rgba(255, 255, 255, 0.85);
+
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+/* ACCESIBILIDAD */
+
+.lightbox button:focus-visible {
+  outline: 3px solid #79bdff;
+  outline-offset: 4px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+  .lightbox {
+    padding: 70px 45px;
+  }
+
+  .lightbox__imagen {
+    max-height: calc(100dvh - 160px);
+  }
+
+  .lightbox__cerrar {
+    top: 15px;
+    right: 15px;
+
+    width: 40px;
+    height: 40px;
+  }
+
+  .lightbox__flecha {
+    width: 34px;
+    height: 46px;
+
+    font-size: 30px;
+  }
+
+  .lightbox__flecha--anterior {
+    left: 5px;
+  }
+
+  .lightbox__flecha--siguiente {
+    right: 5px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .lightbox {
+    padding: 70px 35px;
+  }
+
+  .lightbox__imagen {
+    border-radius: 4px;
+  }
+
+}

@@ -182,3 +182,9 @@
     padding: 20px 25px 30px;
   }
 }
+.automatismos__proximamente {
+  display: inline-block;
+  color: #89939e;
+  font-size: 14px;
+  font-weight: 600;
+}

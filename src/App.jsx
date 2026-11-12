@@ -5,11 +5,13 @@ import CortinasMetalicas from './Screens/Productos/CortinasMetalicas'
 import Automatizaciones from './Screens/Automatizaciones/Automatizaciones'
 import Contacto from './Screens/Contacto/Contacto'
 import Galeria from './Screens/Galeria/Galeria'
+import EquiposParalelos from './Screens/EquiposParalelos/EquiposParalelos'
 
 function App() {
   return (
     <Routes>
       <Route element={<LayoutPrincipal />}>
+        <Route path="/Automatismos/Paralelos" element={<EquiposParalelos />}/>
         <Route path="/" element={<Home />} />
         <Route path="/Cortinas" element={<CortinasMetalicas />} />
         <Route path="/Automatismos" element={<Automatizaciones />} />
