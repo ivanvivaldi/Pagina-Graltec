@@ -1,0 +1,679 @@
+
+/* ==========================================
+   GRALTEC - EQUIPOS SEMIBLINDADOS
+   ========================================== */
+
+.equipos-semiblindados {
+  background-color: #f3f4f6;
+  min-height: 100vh;
+  margin-top: 33.2px;
+  padding: 45px 6% 90px;
+  border-radius: 20px;
+  color: #183b61;
+}
+
+.equipos-semiblindados *,
+.equipos-semiblindados *::before,
+.equipos-semiblindados *::after {
+  box-sizing: border-box;
+}
+
+
+/* ENCABEZADO */
+
+.semiblindados__encabezado {
+  max-width: 1350px;
+  margin: 0 auto 45px;
+  padding: 55px 6%;
+  border-radius: 16px;
+
+  background: linear-gradient(
+    110deg,
+    rgba(14, 43, 72, 0.96),
+    rgba(24, 59, 97, 0.88)
+  );
+
+  color: #ffffff;
+}
+
+.semiblindados__encabezado-contenido {
+  max-width: 740px;
+}
+
+.semiblindados__subtitulo {
+  display: block;
+  margin-bottom: 15px;
+  color: #bed8ef;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.semiblindados__titulo {
+  margin: 0 0 18px;
+  font-size: clamp(32px, 4vw, 52px);
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+.semiblindados__introduccion {
+  margin: 0;
+  max-width: 600px;
+  color: #e5edf4;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+
+/* TÍTULOS GENERALES */
+
+.semiblindados__seccion-titulo {
+  margin: 0 0 15px;
+  color: #183b61;
+  font-size: clamp(23px, 2.5vw, 30px);
+  font-weight: 700;
+}
+
+.semiblindados__seccion-descripcion {
+  margin: 0 0 25px;
+  color: #626b75;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+
+/* SELECTOR DE MODELOS */
+
+.semiblindados__selector {
+  max-width: 1350px;
+  margin: 0 auto 35px;
+  text-align: center;
+}
+
+.semiblindados__selector-botones {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  padding: 6px;
+  width: 100%;
+
+  background-color: #e3e8ed;
+  border: 1px solid #d5dde5;
+  border-radius: 40px;
+}
+
+.semiblindados__selector-boton {
+  min-width: 0;
+  padding: 13px 25px;
+
+  background-color: transparent;
+  border: none;
+  border-radius: 35px;
+
+  color: #183b61;
+  font-size: 16px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.semiblindados__selector-boton.activo {
+  background-color: #0a4f82;
+  color: #ffffff;
+  box-shadow: 0 3px 10px rgba(10, 79, 130, 0.2);
+}
+
+.semiblindados__selector-boton:not(.activo):hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+/* PRODUCTO PRINCIPAL */
+
+.semiblindados__producto {
+  max-width: 1350px;
+  margin: 0 auto 65px;
+
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.1fr)
+    minmax(0, 0.9fr);
+
+  gap: 0;
+
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  overflow: hidden;
+
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.045);
+}
+
+
+/* IMAGEN PRINCIPAL */
+
+.semiblindados__producto-imagen {
+  min-width: 0;
+  min-height: 520px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #ffffff;
+  padding: 15px;
+}
+
+.semiblindados__imagen-ampliar {
+  position: relative;
+
+  width: 100%;
+  min-height: 480px;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: transparent;
+  border: none;
+
+  cursor: zoom-in;
+}
+
+.semiblindados__imagen-principal {
+  display: block;
+  width: 100%;
+  /* max-width: 100%; */
+  height: 480px;
+
+  object-fit: contain;
+
+  transition: transform 0.35s ease;
+}
+
+.semiblindados__imagen-ampliar:hover
+.semiblindados__imagen-principal {
+  transform: scale(1.035);
+}
+
+.semiblindados__zoom {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+
+  padding: 9px 15px;
+
+  background: rgba(24, 59, 97, 0.9);
+  color: #ffffff;
+
+  border-radius: 25px;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+
+/* INFORMACIÓN DEL MOTOR */
+
+.semiblindados__producto-info {
+  min-width: 0;
+  padding: 45px 42px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.semiblindados__producto-etiqueta {
+  margin-bottom: 12px;
+  color: #265789;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.semiblindados__producto-nombre {
+  margin: 0 0 18px;
+  color: #183b61;
+  font-size: clamp(32px, 3vw, 43px);
+}
+
+.semiblindados__producto-descripcion {
+  margin: 0 0 30px;
+  color: #626b75;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+
+/* AVISOS INFORMATIVOS */
+
+.semiblindados__avisos {
+  display: grid;
+  gap: 12px;
+  width: 100%;
+  margin: 0 0 28px;
+}
+
+.semiblindados__aviso {
+  padding: 17px 20px;
+
+  border-radius: 10px;
+  border: 1px solid #d7e4ef;
+  border-left: 4px solid #0a4f82;
+
+  background-color: #eef5fa;
+}
+
+.semiblindados__aviso h3 {
+  margin: 0 0 7px;
+  font-size: 17px;
+  color: #183b61;
+}
+
+.semiblindados__aviso p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.55;
+  color: #485c6e;
+}
+
+
+/* FICHA TÉCNICA */
+
+.semiblindados__ficha {
+  width: 100%;
+  margin-bottom: 28px;
+}
+
+.semiblindados__ficha-titulo {
+  margin: 0 0 20px;
+  color: #183b61;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.semiblindados__especificaciones {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0;
+}
+
+.semiblindados__especificacion {
+  padding: 16px;
+
+  background-color: #f3f5f7;
+  border: 1px solid #e8edf1;
+  border-radius: 10px;
+}
+
+.semiblindados__especificacion dt {
+  margin-bottom: 8px;
+  color: #626b75;
+  font-size: 16px;
+}
+
+.semiblindados__especificacion dd {
+  margin: 0;
+  color: #183b61;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+/* BOTÓN DE CONSULTA */
+
+.semiblindados__boton-consulta,
+.semiblindados__cta-boton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  padding: 15px 25px;
+
+  background-color: #0a4f82;
+  border: 1px solid #0a4f82;
+  border-radius: 9px;
+
+  color: #ffffff;
+  text-decoration: none;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  transition:
+    background-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.semiblindados__boton-consulta:hover,
+.semiblindados__cta-boton:hover {
+  background-color: #073b63;
+  transform: translateY(-2px);
+}
+
+
+/* GALERÍA */
+
+.semiblindados__galeria {
+  max-width: 1350px;
+  margin: 0 auto 65px;
+}
+
+.semiblindados__galeria-grilla {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.semiblindados__galeria-item {
+  width: 100%;
+  height: 270px;
+  padding: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #ffffff;
+
+  border: 2px solid transparent;
+  border-radius: 12px;
+
+  cursor: zoom-in;
+
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.semiblindados__galeria-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.semiblindados__galeria-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 9px 24px rgba(0, 0, 0, 0.10);
+}
+
+.semiblindados__galeria-item.seleccionado {
+  border-color: #0a4f82;
+}
+
+
+/* ACCESORIOS Y CONTROL REMOTO */
+
+.semiblindados__complementos {
+  max-width: 1350px;
+  margin: 0 auto 65px;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.semiblindados__complemento {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: #ffffff;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  overflow: hidden;
+
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+}
+
+.semiblindados__complemento-imagen {
+  height: 275px;
+  padding: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #eef1f4;
+}
+
+.semiblindados__complemento-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.semiblindados__complemento-info {
+  padding: 28px 30px 35px;
+}
+
+.semiblindados__complemento-info h2 {
+  margin: 0 0 15px;
+  color: #183b61;
+  font-size: 24px;
+}
+
+.semiblindados__complemento-info p {
+  margin: 0;
+  color: #626b75;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+
+/* CONSULTA FINAL */
+
+.semiblindados__cta {
+  max-width: 1350px;
+  margin: 0 auto;
+
+  padding: 55px 25px;
+  text-align: center;
+
+  background: linear-gradient(
+    120deg,
+    #123b62,
+    #0a4f82
+  );
+
+  border-radius: 16px;
+  color: #ffffff;
+}
+
+.semiblindados__cta h2 {
+  margin: 0 0 15px;
+  font-size: clamp(25px, 3vw, 34px);
+}
+
+.semiblindados__cta p {
+  margin: 0 auto 28px;
+  max-width: 600px;
+
+  color: #e2edf6;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.semiblindados__cta-boton {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: #0a4f82;
+}
+
+.semiblindados__cta-boton:hover {
+  background-color: #e9f2fa;
+}
+
+
+/* IMAGEN PENDIENTE */
+
+.semiblindados__imagen-pendiente {
+  display: flex;
+  width: 100%;
+  min-height: 480px;
+
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  padding: 24px;
+  color: #626b75;
+  font-size: 16px;
+}
+
+.semiblindados__imagen-ampliar:disabled {
+  cursor: default;
+}
+
+
+/* FOCO ACCESIBLE */
+
+.equipos-semiblindados button:focus-visible,
+.equipos-semiblindados a:focus-visible {
+  outline: 3px solid #499fdf;
+  outline-offset: 4px;
+}
+
+
+/* RESPONSIVE TABLETS */
+
+@media (max-width: 1000px) {
+
+  .semiblindados__producto {
+    grid-template-columns: 1fr;
+  }
+
+  .semiblindados__producto-imagen {
+    min-height: 400px;
+  }
+
+  .semiblindados__producto-info {
+    padding: 35px;
+  }
+
+  .semiblindados__complementos {
+    grid-template-columns: 1fr;
+  }
+
+  .semiblindados__selector-botones {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+
+/* RESPONSIVE CELULARES */
+
+@media (max-width: 650px) {
+
+  .equipos-semiblindados {
+    padding: 25px 4% 65px;
+  }
+
+  .semiblindados__encabezado {
+    padding: 40px 25px;
+    margin-bottom: 35px;
+  }
+
+  .semiblindados__introduccion {
+    font-size: 15px;
+  }
+
+  .semiblindados__selector-boton {
+    min-width: 0;
+    padding: 12px 8px;
+    font-size: 13px;
+    overflow-wrap: anywhere;
+  }
+
+  .semiblindados__producto-imagen {
+    min-height: 280px;
+    padding: 20px;
+  }
+
+  .semiblindados__imagen-ampliar {
+    min-height: 260px;
+  }
+
+  .semiblindados__imagen-principal {
+    height: 260px;
+  }
+
+  .semiblindados__imagen-pendiente {
+    min-height: 260px;
+  }
+
+  .semiblindados__producto-info {
+    padding: 27px 22px;
+  }
+
+  .semiblindados__especificaciones {
+    grid-template-columns: 1fr;
+    gap: 9px;
+  }
+
+  .semiblindados__especificacion {
+    padding: 12px;
+  }
+
+  .semiblindados__especificacion dd {
+    font-size: 17px;
+  }
+
+  .semiblindados__galeria-grilla {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .semiblindados__galeria-item {
+    height: 165px;
+    padding: 12px;
+  }
+
+  .semiblindados__complemento-imagen {
+    height: 220px;
+  }
+
+  .semiblindados__complemento-info {
+    padding: 24px 22px;
+  }
+
+  .semiblindados__complemento-info h2 {
+    font-size: 21px;
+  }
+
+  .semiblindados__cta {
+    padding: 40px 20px;
+  }
+
+}
+
+
+/* PANTALLAS MUY PEQUEÑAS */
+
+@media (max-width: 380px) {
+
+  .semiblindados__selector-boton {
+    min-width: 0;
+    padding: 11px 13px;
+  }
+
+  .semiblindados__galeria-grilla {
+    grid-template-columns: 1fr;
+  }
+
+}

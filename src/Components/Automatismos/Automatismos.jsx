@@ -16,7 +16,7 @@ const motores = [
     titulo: "Motores Semiblindados",
     descripcion: "Rendimiento y confiabilidad para uso intensivo.",
     imagen: "/imagenes/Motores/Motor industrial azul con placa AMP 4.png",
-    ruta: null
+    ruta: "/Automatismos/Semiblindados"
   },
   {
     id: "blindados",
