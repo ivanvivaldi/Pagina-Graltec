@@ -94,10 +94,8 @@ function EquiposSemiblindados() {
           </h1>
 
           <p className="semiblindados__introduccion">
-            Conocé nuestra línea de motores semiblindados
-            para cortinas metálicas.
-            Explorá sus modelos, características técnicas
-            y opciones de accionamiento.
+          Diseñados para la automatización de cortinas metálicas, con distintas capacidades de elevación para adaptarse a los requerimientos de cada instalación.
+          Explorá los modelos disponibles, compará sus características técnicas y encontrá el equipo adecuado para tu proyecto.
           </p>
 
         </div>
@@ -167,9 +165,9 @@ function EquiposSemiblindados() {
                 src={imagenPrincipal.src}
                 alt={imagenPrincipal.alt}
                 className="semiblindados__imagen-principal"
-                 style={{
-    transform: `scale(${imagenPrincipal.escala || 1})`
-  }}
+                style={{
+                  transform: `scale(${imagenPrincipal.escala || 1})`
+                }}
               />
 
               {galeria.length > 0 && (
@@ -205,45 +203,6 @@ function EquiposSemiblindados() {
           <h2 className="semiblindados__producto-nombre">
             {modelo.nombre}
           </h2>
-
-
-          {/* INFORMACIÓN COMÚN DE LA LÍNEA */}
-
-          <div
-            className="semiblindados__avisos"
-            aria-label="Opciones de la línea"
-          >
-
-            {/* VERSIONES MONOFÁSICAS Y TRIFÁSICAS */}
-
-            <div className="semiblindados__aviso">
-
-              <h3>
-                {contenidoComunSemiblindados.versiones.titulo}
-              </h3>
-
-              <p>
-                {contenidoComunSemiblindados.versiones.descripcion}
-              </p>
-
-            </div>
-
-
-            {/* CONTROL REMOTO */}
-
-            <div className="semiblindados__aviso">
-
-              <h3>
-                {contenidoComunSemiblindados.mandoDistancia.titulo}
-              </h3>
-
-              <p>
-                {contenidoComunSemiblindados.mandoDistancia.descripcion}
-              </p>
-
-            </div>
-
-          </div>
 
 
           {/* FICHA TÉCNICA */}
@@ -324,11 +283,8 @@ function EquiposSemiblindados() {
                   'semiblindados__galeria-item' +
                   (imagenActiva === index ? ' seleccionado' : '')
                 }
-                onClick={() => {
-                  setImagenActiva(index)
-                  /* setImagenAmpliada(index) */
-                }}
-                aria-label={`Ampliar imagen ${index + 1} del ${modelo.nombre}`}
+                onClick={() => setImagenActiva(index)}
+                aria-label={`Mostrar imagen ${index + 1} del ${modelo.nombre}`}
               >
 
                 <img
@@ -348,56 +304,29 @@ function EquiposSemiblindados() {
       )}
 
 
-      {/* ACCESORIOS Y CONTROL REMOTO */}
+      {/* CARACTERÍSTICAS COMUNES DE LA FAMILIA */}
 
-      {(
-        contenidoComunSemiblindados.accesorios ||
-        contenidoComunSemiblindados.controlRemoto
-      ) && (
+      <section className="semiblindados__caracteristicas">
 
-        <section className="semiblindados__complementos">
+        <h2 className="semiblindados__seccion-titulo">
+          Características de la línea
+        </h2>
 
-          {[
-            contenidoComunSemiblindados.accesorios,
-            contenidoComunSemiblindados.controlRemoto
-          ]
-            .filter(Boolean)
-            .map((item) => (
+        <div className="semiblindados__avisos">
 
-              <div
-                className="semiblindados__complemento"
-                key={item.titulo}
-              >
+          <div className="semiblindados__aviso">
+            <h3>{contenidoComunSemiblindados.versiones.titulo}</h3>
+            <p>{contenidoComunSemiblindados.versiones.descripcion}</p>
+          </div>
 
-                {item.imagen && (
+          <div className="semiblindados__aviso">
+            <h3>{contenidoComunSemiblindados.mandoDistancia.titulo}</h3>
+            <p>{contenidoComunSemiblindados.mandoDistancia.descripcion}</p>
+          </div>
 
-                  <div className="semiblindados__complemento-imagen">
+        </div>
 
-                    <img
-                      src={item.imagen}
-                      alt={item.titulo}
-                      loading="lazy"
-                    />
-
-                  </div>
-
-                )}
-
-                <div className="semiblindados__complemento-info">
-
-                  <h2>{item.titulo}</h2>
-
-                  <p>{item.descripcion}</p>
-
-                </div>
-
-              </div>
-
-            ))}
-
-        </section>
-
-      )}
+      </section>
 
 
       {/* CONSULTA FINAL */}

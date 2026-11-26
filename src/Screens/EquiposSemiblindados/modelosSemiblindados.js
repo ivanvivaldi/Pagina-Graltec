@@ -10,7 +10,7 @@ export const categoriasTecnicasSemiblindados = [
   'Potencia del motor',
   'Diámetro (sugerido) del tubo enrollador',
   'RPM del piñón de salida (Z14)',
-  'RPM del eje de cortina',
+  'RPM del motor eléctrico',
   'Velocidad de cortina',
   'Freno electromagnético',
   'Engranaje de contramarcha'
@@ -104,7 +104,7 @@ const fichasTecnicasSemiblindados = {
   },
 
   "SB-420": {
-    capacidad: "400",
+    capacidad: "400 Kg",
     potencia: "1 HP",
     diametroTubo: "180 mm",
     rpmPinon: "35",
@@ -115,7 +115,7 @@ const fichasTecnicasSemiblindados = {
   },
 
   "SB-500": {
-    capacidad: "500 KG",
+    capacidad: "500 Kg",
     potencia: "1.25 HP",
     diametroTubo: "200 mm - 250 mm ",
     rpmPinon: "35",
@@ -144,7 +144,13 @@ const galeriasSemiblindados = {
       src: "/imagenes/Motores/GRALTEC_motor_tirantes_tuercas_al_ras.jpg",
       alt: "Motor semiblindado GRALTEC SB 150 - detalle",
       escala: 1.5
+    },
+    {
+      src: "/imagenes/Motores/Accesirios llave 15.jpg",
+      alt: "Accesorios",
+      escala: 1.5
     }
+    
   ],
 
   "SB-200": [
@@ -160,6 +166,11 @@ const galeriasSemiblindados = {
     {
       src: "/imagenes/Motores/GRALTEC_motor_tornillos_grandes_plateados_final (1).jpg",
       alt: "Motor semiblindado GRALTEC SB 200 - detalle"
+    },
+    {
+      src: "/imagenes/Motores/Accesirios llave 15.jpg",
+      alt: "Accesorios",
+      escala: 1.5
     }
   ],
 
@@ -176,6 +187,11 @@ const galeriasSemiblindados = {
     {
       src: "/imagenes/Motores/GRALTEC_motor_tirantes_tuercas_al_ras.jpg",
       alt: "Motor semiblindado GRALTEC SB 250 - detalle",
+      escala: 1.5
+    },
+    {
+      src: "/imagenes/Motores/Accesirios llave 15.jpg",
+      alt: "Accesorios",
       escala: 1.5
     }
   ],
@@ -194,7 +210,13 @@ const galeriasSemiblindados = {
       src: "/imagenes/Motores/Motorreductor Industrial Azul en Fondo Blanco.png",
       alt: "Motor semiblindado GRALTEC SB 260 - detalle",
       escala: 1.5
+    },
+    {
+      src: "/imagenes/Motores/Accesorios llave 16.jpg",
+      alt: "Accesorios",
+      escala: 1.2
     }
+    
   ],
 
   "SB-310": [
@@ -211,6 +233,11 @@ const galeriasSemiblindados = {
       src: "/imagenes/Motores/Motorreductor Industrial Azul en Fondo Blanco.png",
       alt: "Motor semiblindado GRALTEC SB 310 - detalle",
       escala: 1.5
+    },
+    {
+      src: "/imagenes/Motores/Accesorios llave 16.jpg",
+      alt: "Accesorios",
+      escala: 1.2
     }
   ],
 
@@ -228,6 +255,11 @@ const galeriasSemiblindados = {
       src: "/imagenes/Motores/Motorreductor Industrial Azul en Fondo Blanco.png",
       alt: "Motor semiblindado GRALTEC SB 370 - detalle",
       escala: 1.5
+    },
+    {
+      src: "/imagenes/Motores/Accesorios llave 16.jpg",
+      alt: "Accesorios",
+      escala: 1.2
     }
   ],
 
@@ -244,6 +276,11 @@ const galeriasSemiblindados = {
     {
       src: "/imagenes/Motores/Motorreductor industrial azul sobre fondo blanco.png",
       alt: "Motor semiblindado GRALTEC SB 420 - detalle"
+    },
+    {
+      src: "/imagenes/Motores/Accesorios llave 16.jpg",
+      alt: "Accesorios",
+      escala: 1.2
     }
   ],
 
@@ -261,6 +298,11 @@ const galeriasSemiblindados = {
     {
       src: "/imagenes/Motores/Motorreductor industrial azul sobre fondo blanco.png",
       alt: "Motor semiblindado GRALTEC SB 500 - detalle"
+    },
+    {
+      src: "/imagenes/Motores/Accesorios llave 16.jpg",
+      alt: "Accesorios",
+      escala: 1.2
     }
   ]
 
